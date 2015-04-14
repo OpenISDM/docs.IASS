@@ -2,61 +2,170 @@
 title: API Reference
 
 language_tabs:
-  - c#
-  - ruby
-  - python
+  - C#
 
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
+  - <a href='#'>Authors: Rimi and Johnson Su</a>
   - <a href='http://github.com/tripit/slate'>Documentation Powered by Slate</a>
-
-includes:
-  - errors
 
 search: true
 ---
 
 # Introduction
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+Welcome to the IASS API! You can use our API to access IASS API endpoints, which can browse the monitored objects, and also you can request monitored conditions for notification services to your application.
 
-We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
+We have language bindings in C Sharp(C#)! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
-This example API documentation page was created with [Slate](http://github.com/tripit/slate). Feel free to edit it and use it as a base for your own API's documentation.
 
-# Authentication
+<aside class="notice">to be describe a box environment (POS)</aside>
 
-> To authorize, use this code:
 
-```ruby
-require 'kittn'
+# Definitions
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
+Prime Conditions:| 
+-----------------|
+Prime conditions, which are possible situation of monitored object. A PrimeCondition is one of possible situations of a monitored object, which means it happens or will happen on the monitored object. It will include a monitored object ID, a logical operator parameter (LARGER_THEN, SMALLER_THAN, EQUAL, NOT, etc.), and a condition value. |
+
+Notification Conditions:|
+------------------------|
+Notification conditions, which are when should IASS taken corresponding notification actions. A NotificationCondition is a logical expression which contains prime conditions in it. It represents the condition—when should IASS notify receivers. If it returns TRUE, notification action will be taken. |
+
+Notification Actions:| 
+---------------------|
+Notification actions, whom will receive notifications and how will them receive notifications. A Notification is an action that will be taken when notification conditions happen.|
+
+# Request Functions
+
+The functions described in this overview provide ways to set a monitor service request. From setting prime conditions, a possible condition of an object, for objects in interest to setting required notification condition, and then assign receivers accordingly.
+
+## createLogicalExpression
+
+```C#
+Use Example
 ```
 
-```python
-import kittn
+Create an expression to express a prime condition used in addNewCondtion.
 
-api = kittn.authorize('meowmeowmeow')
+
+###Syntax
+
+###Prarameters
+
+###Return Value
+
+###Requirements
+
+
+
+## addPrimeCondition
+
+```C#
+Use Example
 ```
 
-```shell
-# With shell, you can just pass the correct header with each request
-curl "api_endpoint_here"
-  -H "Authorization: meowmeowmeow"
+To add one or more prime conditions that will be used in setNotificationCondtion.
+
+
+###Syntax
+
+###Prarameters
+
+###Return Value
+
+###Requirements
+
+
+
+## getList
+
+```C#
+Use Example
 ```
 
-> Make sure to replace `meowmeowmeow` with your API key.
+Retrieve the list of all requested prime conditions.
 
-Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
 
-Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
+###Syntax
 
-`Authorization: meowmeowmeow`
+###Prarameters
 
-<aside class="notice">
-You must replace `meowmeowmeow` with your personal API key.
-</aside>
+###Return Value
+
+###Requirements
+
+
+
+## getCondtionList
+
+```C#
+Use Example
+```
+
+Retrieve the list of requested prime conditions for a monitored object.
+
+###Syntax
+
+###Prarameters
+
+###Return Value
+
+###Requirements
+
+
+## getCondtion
+
+```C#
+Use Example
+```
+
+Retrieve a prime condition.
+
+###Syntax
+
+###Prarameters
+
+###Return Value
+
+###Requirements
+
+
+## setNotificationCondition
+
+```C#
+Use Example
+```
+
+Sets notification conditions for request monitor and notification services. It is to specify that in what condition IASS should notify receivers.
+
+###Syntax
+
+###Prarameters
+
+###Return Value
+
+###Requirements
+
+
+## addNotificationAction
+
+```C#
+Use Example
+```
+
+Set notification actions which should be taken when a specific notification condition happens.
+
+###Syntax
+
+###Prarameters
+
+###Return Value
+
+###Requirements
+
+
+
+
 
 # Kittens
 

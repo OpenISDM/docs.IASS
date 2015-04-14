@@ -165,9 +165,11 @@ Set notification actions which should be taken when a specific notification cond
 
 
 
+# Browsing Functions
 
 
-# Kittens
+
+# Template_Kittens
 
 ## Get All Kittens
 

@@ -13,7 +13,7 @@
 
       <script>
         $(function() {
-          setupLanguages(["c#","ruby","python"]);
+          setupLanguages(["C#"]);
         });
       </script>
   </head>
@@ -28,9 +28,7 @@
     <div class="tocify-wrapper">
       <img src="images/logo.png" />
         <div class="lang-selector">
-              <a href="#" data-language-name="c#">c#</a>
-              <a href="#" data-language-name="ruby">ruby</a>
-              <a href="#" data-language-name="python">python</a>
+              <a href="#" data-language-name="C#">C#</a>
         </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
@@ -39,7 +37,7 @@
       <div id="toc">
       </div>
         <ul class="toc-footer">
-            <li><a href='#'>Sign Up for a Developer Key</a></li>
+            <li>{"<a href='#'>Authors"=>"Rimi and Johnson Su</a>"}</li>
             <li><a href='http://github.com/tripit/slate'>Documentation Powered by Slate</a></li>
         </ul>
     </div>
@@ -48,43 +46,145 @@
       <div class="content">
         <h1 id="introduction">Introduction</h1>
 
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
+<p>Welcome to the IASS API! You can use our API to access IASS API endpoints, which can browse the monitored objects, and also you can request monitored conditions for notification services to your application.</p>
 
-<p>We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
+<p>We have language bindings in C Sharp(C#)! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
 
-<p>This example API documentation page was created with <a href="http://github.com/tripit/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&rsquo;s documentation.</p>
+<aside class="notice">to be describe a box environment (POS)</aside>
 
-<h1 id="authentication">Authentication</h1>
+<h1 id="definitions">Definitions</h1>
 
-<blockquote>
-<p>To authorize, use this code:</p>
-</blockquote>
-<pre><code class="highlight ruby"><span class="nb">require</span> <span class="s1">'kittn'</span>
+<table><thead>
+<tr>
+<th>Prime Conditions:</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Prime conditions, which are possible situation of monitored object. A PrimeCondition is one of possible situations of a monitored object, which means it happens or will happen on the monitored object. It will include a monitored object ID, a logical operator parameter (LARGER_THEN, SMALLER_THAN, EQUAL, NOT, etc.), and a condition value.</td>
+</tr>
+</tbody></table>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<table><thead>
+<tr>
+<th>Notification Conditions:</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Notification conditions, which are when should IASS taken corresponding notification actions. A NotificationCondition is a logical expression which contains prime conditions in it. It represents the condition—when should IASS notify receivers. If it returns TRUE, notification action will be taken.</td>
+</tr>
+</tbody></table>
+
+<table><thead>
+<tr>
+<th>Notification Actions:</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Notification actions, whom will receive notifications and how will them receive notifications. A Notification is an action that will be taken when notification conditions happen.</td>
+</tr>
+</tbody></table>
+
+<h1 id="request-functions">Request Functions</h1>
+
+<p>The functions described in this overview provide ways to set a monitor service request. From setting prime conditions, a possible condition of an object, for objects in interest to setting required notification condition, and then assign receivers accordingly.</p>
+
+<h2 id="createlogicalexpression">createLogicalExpression</h2>
+<pre><code class="highlight plaintext">Use Example
 </code></pre>
-<pre><code class="highlight python"><span class="kn">import</span> <span class="nn">kittn</span>
 
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<p>Create an expression to express a prime condition used in addNewCondtion.</p>
+
+<h3 id="syntax">Syntax</h3>
+
+<h3 id="prarameters">Prarameters</h3>
+
+<h3 id="return-value">Return Value</h3>
+
+<h3 id="requirements">Requirements</h3>
+
+<h2 id="addprimecondition">addPrimeCondition</h2>
+<pre><code class="highlight plaintext">Use Example
 </code></pre>
-<pre><code class="highlight shell"><span class="c"># With shell, you can just pass the correct header with each request</span>
-curl <span class="s2">"api_endpoint_here"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+
+<p>To add one or more prime conditions that will be used in setNotificationCondtion.</p>
+
+<h3 id="syntax">Syntax</h3>
+
+<h3 id="prarameters">Prarameters</h3>
+
+<h3 id="return-value">Return Value</h3>
+
+<h3 id="requirements">Requirements</h3>
+
+<h2 id="getlist">getList</h2>
+<pre><code class="highlight plaintext">Use Example
 </code></pre>
 
-<blockquote>
-<p>Make sure to replace <code class="prettyprint">meowmeowmeow</code> with your API key.</p>
-</blockquote>
+<p>Retrieve the list of all requested prime conditions.</p>
 
-<p>Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our <a href="http://example.com/developers">developer portal</a>.</p>
+<h3 id="syntax">Syntax</h3>
 
-<p>Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
+<h3 id="prarameters">Prarameters</h3>
 
-<p><code class="prettyprint">Authorization: meowmeowmeow</code></p>
+<h3 id="return-value">Return Value</h3>
 
-<aside class="notice">
-You must replace `meowmeowmeow` with your personal API key.
-</aside>
+<h3 id="requirements">Requirements</h3>
+
+<h2 id="getcondtionlist">getCondtionList</h2>
+<pre><code class="highlight plaintext">Use Example
+</code></pre>
+
+<p>Retrieve the list of requested prime conditions for a monitored object.</p>
+
+<h3 id="syntax">Syntax</h3>
+
+<h3 id="prarameters">Prarameters</h3>
+
+<h3 id="return-value">Return Value</h3>
+
+<h3 id="requirements">Requirements</h3>
+
+<h2 id="getcondtion">getCondtion</h2>
+<pre><code class="highlight plaintext">Use Example
+</code></pre>
+
+<p>Retrieve a prime condition.</p>
+
+<h3 id="syntax">Syntax</h3>
+
+<h3 id="prarameters">Prarameters</h3>
+
+<h3 id="return-value">Return Value</h3>
+
+<h3 id="requirements">Requirements</h3>
+
+<h2 id="setnotificationcondition">setNotificationCondition</h2>
+<pre><code class="highlight plaintext">Use Example
+</code></pre>
+
+<p>Sets notification conditions for request monitor and notification services. It is to specify that in what condition IASS should notify receivers.</p>
+
+<h3 id="syntax">Syntax</h3>
+
+<h3 id="prarameters">Prarameters</h3>
+
+<h3 id="return-value">Return Value</h3>
+
+<h3 id="requirements">Requirements</h3>
+
+<h2 id="addnotificationaction">addNotificationAction</h2>
+<pre><code class="highlight plaintext">Use Example
+</code></pre>
+
+<p>Set notification actions which should be taken when a specific notification condition happens.</p>
+
+<h3 id="syntax">Syntax</h3>
+
+<h3 id="prarameters">Prarameters</h3>
+
+<h3 id="return-value">Return Value</h3>
+
+<h3 id="requirements">Requirements</h3>
 
 <h1 id="kittens">Kittens</h1>
 
@@ -204,70 +304,10 @@ Remember — a happy kitten is an authenticated kitten!
 </tr>
 </tbody></table>
 
-          <h1 id="errors">Errors</h1>
-
-<aside class="notice">This error section is stored in a separate file in `includes/_errors.md`. Slate allows you to optionally separate out your docs into many files&hellip;just save them to the `includes` folder and add them to the top of your `index.md`&rsquo;s frontmatter. Files are included in the order listed.</aside>
-
-<p>The Kittn API uses the following error codes:</p>
-
-<table><thead>
-<tr>
-<th>Error Code</th>
-<th>Meaning</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>400</td>
-<td>Bad Request &ndash; Your request sucks</td>
-</tr>
-<tr>
-<td>401</td>
-<td>Unauthorized &ndash; Your API key is wrong</td>
-</tr>
-<tr>
-<td>403</td>
-<td>Forbidden &ndash; The kitten requested is hidden for administrators only</td>
-</tr>
-<tr>
-<td>404</td>
-<td>Not Found &ndash; The specified kitten could not be found</td>
-</tr>
-<tr>
-<td>405</td>
-<td>Method Not Allowed &ndash; You tried to access a kitten with an invalid method</td>
-</tr>
-<tr>
-<td>406</td>
-<td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
-</tr>
-<tr>
-<td>410</td>
-<td>Gone &ndash; The kitten requested has been removed from our servers</td>
-</tr>
-<tr>
-<td>418</td>
-<td>I&rsquo;m a teapot</td>
-</tr>
-<tr>
-<td>429</td>
-<td>Too Many Requests &ndash; You&rsquo;re requesting too many kittens! Slown down!</td>
-</tr>
-<tr>
-<td>500</td>
-<td>Internal Server Error &ndash; We had a problem with our server. Try again later.</td>
-</tr>
-<tr>
-<td>503</td>
-<td>Service Unavailable &ndash; We&rsquo;re temporarially offline for maintanance. Please try again later.</td>
-</tr>
-</tbody></table>
-
       </div>
       <div class="dark-box">
           <div class="lang-selector">
-                <a href="#" data-language-name="c#">c#</a>
-                <a href="#" data-language-name="ruby">ruby</a>
-                <a href="#" data-language-name="python">python</a>
+                <a href="#" data-language-name="C#">C#</a>
           </div>
       </div>
     </div>

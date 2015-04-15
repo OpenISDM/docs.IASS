@@ -13,7 +13,7 @@
 
       <script>
         $(function() {
-          setupLanguages(["C#"]);
+          setupLanguages(["c#"]);
         });
       </script>
   </head>
@@ -28,7 +28,7 @@
     <div class="tocify-wrapper">
       <img src="images/logo.png" />
         <div class="lang-selector">
-              <a href="#" data-language-name="C#">C#</a>
+              <a href="#" data-language-name="c#">c#</a>
         </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
@@ -56,31 +56,33 @@
 
 <table><thead>
 <tr>
-<th>Prime Conditions:</th>
+<th>Terms</th>
+<th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>Prime conditions, which are possible situation of monitored object. A PrimeCondition is one of possible situations of a monitored object, which means it happens or will happen on the monitored object. It will include a monitored object ID, a logical operator parameter (LARGER_THEN, SMALLER_THAN, EQUAL, NOT, etc.), and a condition value.</td>
+<td>Prime Condition</td>
+<td>A PrimeCondition is one of possible situations of a monitored object, which means it happens or will happen on the monitored object. It will include a monitored object ID, a <code class="prettyprint">logical operator</code>, and a <code class="prettyprint">condition value</code>.</td>
 </tr>
-</tbody></table>
-
-<table><thead>
 <tr>
-<th>Notification Conditions:</th>
+<td>NotificationCondtion</td>
+<td>A NotificationCondition is a logical expression whose context contains prime conditions in it. It represents the condition—when should IASS notify receivers. If it returns TRUE, notification action will be triggered.</td>
 </tr>
-</thead><tbody>
 <tr>
-<td>Notification conditions, which are when should IASS taken corresponding notification actions. A NotificationCondition is a logical expression which contains prime conditions in it. It represents the condition—when should IASS notify receivers. If it returns TRUE, notification action will be taken.</td>
+<td>NotificationCondtion</td>
+<td>A NotificationCondition is a logical expression whose context contains prime conditions in it. It represents the condition—when should IASS notify receivers. If it returns <code class="prettyprint">TRUE</code>, notification action will be triggered.</td>
 </tr>
-</tbody></table>
-
-<table><thead>
 <tr>
-<th>Notification Actions:</th>
+<td>NotificationAction</td>
+<td>A Notification action is an action that will be triggered when notification conditions happen.</td>
 </tr>
-</thead><tbody>
 <tr>
-<td>Notification actions, whom will receive notifications and how will them receive notifications. A Notification is an action that will be taken when notification conditions happen.</td>
+<td>Logical operator</td>
+<td><ul><li>larger than ( &gt; ): LARGET_THAN</li><li>smaller than ( &lt; ): SMALLER_THAN</li><li>equal ( = ): EQUAL</li><li>not ( ! ): NOT</li><li>not less than ( &gt;= ): NOT_LESS</li><li>not more than ( &lt;= :) NOT_MORE</li></ul></td>
+</tr>
+<tr>
+<td>Condition value</td>
+<td>It could be several forms: a word string, a boolean value, an integer, and a decimal. The type of condition values based on monitor object in interest.</td>
 </tr>
 </tbody></table>
 
@@ -88,103 +90,521 @@
 
 <p>The functions described in this overview provide ways to set a monitor service request. From setting prime conditions, a possible condition of an object, for objects in interest to setting required notification condition, and then assign receivers accordingly.</p>
 
-<h2 id="createlogicalexpression">createLogicalExpression</h2>
-<pre><code class="highlight plaintext">Use Example
-</code></pre>
+<h3 id="constructor">Constructor</h3>
 
-<p>Create an expression to express a prime condition used in addNewCondtion.</p>
+<blockquote>
+<p>Use Example</p>
+
+<p>import functions for request IASS services, construct a request manager to call methods of setting and using monitor and notification services.</p>
+</blockquote>
+<pre><code class="highlight csharp"><span class="k">using</span> <span class="nn">IASS.Request</span>
+
+<span class="n">requestManager</span> <span class="p">=</span> <span class="n">New</span> <span class="nf">RequestFunctions</span><span class="p">(</span> <span class="p">);</span>
+</code></pre>
 
 <h3 id="syntax">Syntax</h3>
 
+<table><thead>
+<tr>
+<th></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>RequestFunctions( )</td>
+</tr>
+</tbody></table>
+
 <h3 id="prarameters">Prarameters</h3>
+
+<p>This constructor does not have input parameters.</p>
 
 <h3 id="return-value">Return Value</h3>
 
-<h3 id="requirements">Requirements</h3>
+<p>This constructor will not return value.</p>
+
+<h2 id="createexpression">createExpression</h2>
+
+<p>Creates an expression which composed by (monitor object ID, logical operator, condition value) and returns it in Expression data type.</p>
+
+<blockquote>
+<p>Use Example</p>
+
+<p>generate a logical expression for a monitor condition</p>
+</blockquote>
+<pre><code class="highlight csharp"><span class="n">priCon_expression</span> <span class="p">=</span> <span class="n">requestManager</span><span class="p">.</span><span class="nf">createExpression</span><span class="p">(</span>
+  <span class="n">object12345</span><span class="p">,</span>
+  <span class="n">LARGER_THAN</span><span class="p">,</span>
+  <span class="m">30</span>
+<span class="p">);</span>
+</code></pre>
+
+<h3 id="syntax">Syntax</h3>
+
+<table><thead>
+<tr>
+<th></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Expression createLogicalExpression( <code class="prettyprint">__In__  monitoredObjectID</code>, <code class="prettyprint">__In__  logicalOperator</code>, <code class="prettyprint">__In__  conditionValue</code> );</td>
+</tr>
+</tbody></table>
+
+<table><thead>
+<tr>
+<th>Prarameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>monitoredObjectID [in]</td>
+<td>The ID of a monitor object. If the monitorObjectID matches the ID of an existing monitor object it will be accepted by the function; otherwise, OBJECT_EXIST_ERROR will be returned.</td>
+</tr>
+<tr>
+<td>logicalOperator [in]</td>
+<td>This parameter is one of elements in the operator set {<code class="prettyprint">LARGER_THAN</code>, <code class="prettyprint">SMALLER_THAN</code>, <code class="prettyprint">EQUAL</code>, <code class="prettyprint">NOT</code>, <code class="prettyprint">NOT_LESS</code>, <code class="prettyprint">NOT_MORE</code>} If the logical operator is not feasible for the type of condition value, LOGICAL_ERROR will be returned. Types and feasible logical operators: <ul><li>Integer (numerical):LARGER_THAN, SMALLER_THAN, EQUAL, NOT, NOT_LESS, NOT_MORE.</li><li>Decimal (numerical):LARGER_THAN, SMALLER_THAN, EQUAL, NOT, NOT_LESS, NOT_MORE.</li><li>Boolean value (not numerical):EQUAL, NOT.</li><li>String (not numerical):EQUAL, NOT.</li></ul></td>
+</tr>
+<tr>
+<td>conditionValue [in]</td>
+<td>This parameter is a numerical value or a string which represent a Boolean result or a specific content in monitor object. If the type of condition value mismatch with the type of value in monitor object, TYPE_MISMATCH_ERROR will be returned.</td>
+</tr>
+</tbody></table>
+
+<h3 id="return-value">Return Value</h3>
+
+<p>If the function succeeds, the return value is an expression of a prime condition with information in input parameters. It will return through Expression data structure.</p>
+
+<p>If the function fails, the return value is Null. </p>
+
+<h3 id="exception">Exception</h3>
+
+<table><thead>
+<tr>
+<th>Exception</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>TYPE_MISMATCH_EXCEPTION</td>
+<td>The function will fail in several situations, one of them is type mismatching between the monitor object and the assigned condition value.</td>
+</tr>
+<tr>
+<td>OUT_OF_RANGE_ EXCEPTION</td>
+<td>The function will fail in several situations; one of them is that the assigned condition value is beyond possible range of the monitor object.</td>
+</tr>
+<tr>
+<td>LOGICAL_ EXCEPTION</td>
+<td>The function will fail when the logical operator is not feasible for the type of condition value.</td>
+</tr>
+<tr>
+<td>OBJECT_EXIST_ EXCEPTION</td>
+<td>The function will fail when the given monitor object ID does not in existing monitor objects, which represent the given monitor object may not exist.</td>
+</tr>
+</tbody></table>
 
 <h2 id="addprimecondition">addPrimeCondition</h2>
-<pre><code class="highlight plaintext">Use Example
-</code></pre>
 
-<p>To add one or more prime conditions that will be used in setNotificationCondtion.</p>
+<p>To add one or more prime conditions that will be used to describe a notification condition for monitor and notification service ( in setNotificationCondtion).</p>
+
+<blockquote>
+<p>Use Example</p>
+
+<p>add new prime conditions</p>
+</blockquote>
+<pre><code class="highlight csharp"><span class="n">requestManager</span><span class="p">.</span><span class="nf">addPrimeCondition</span><span class="p">(</span>
+  <span class="n">priCon_expression</span><span class="p">,</span>
+  <span class="n">priConManager</span><span class="p">.</span> <span class="nf">createExpression</span><span class="p">(</span><span class="n">object12345</span><span class="p">,</span> <span class="n">EQUAL</span><span class="p">,</span> <span class="m">50</span><span class="p">),</span>
+  <span class="n">priConManager</span><span class="p">.</span> <span class="nf">createExpression</span><span class="p">(</span><span class="n">object12345</span><span class="p">,</span> <span class="n">SMALLER_THAN</span><span class="p">,</span> <span class="m">100</span><span class="p">)</span>
+<span class="p">);</span>
+
+</code></pre>
 
 <h3 id="syntax">Syntax</h3>
 
-<h3 id="prarameters">Prarameters</h3>
+<table><thead>
+<tr>
+<th></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Void addPrimeCondition(<code class="prettyprint">__In__  ExpressionArray</code>);</td>
+</tr>
+</tbody></table>
+
+<table><thead>
+<tr>
+<th>Prarameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ExpressionArray [in]</td>
+<td>It is an array of Expressions, each Expression represent a prime condition.</td>
+</tr>
+</tbody></table>
 
 <h3 id="return-value">Return Value</h3>
 
-<h3 id="requirements">Requirements</h3>
+<p>This constructor does not return a value.</p>
+
+<h3 id="exception">Exception</h3>
+
+<p>The function will fail when any of the input Expressions is not valid. According to different exceptions happen on Expressions, one of the following exceptions will report.</p>
+
+<table><thead>
+<tr>
+<th>Exception</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>TYPE_MISMATCH_EXCEPTION</td>
+<td>If one of the input Expressions meets this situation, the function will fail: type mismatching between the monitor object and the assigned condition value.</td>
+</tr>
+<tr>
+<td>OUT_OF_RANGE_ EXCEPTION</td>
+<td>If one of the input Expressions meets this situation, the function will fail:  assigned condition value is beyond possible range of the monitor object.</td>
+</tr>
+<tr>
+<td>LOGICAL_ EXCEPTION</td>
+<td>If one of the input Expressions meets this situation, the function will fail: the logical operator is not feasible for the type of condition value.</td>
+</tr>
+<tr>
+<td>OBJECT_EXIST_ EXCEPTION</td>
+<td>If one of the input Expressions meets this situation, the function will fail: the given monitor object ID does not in existing monitor objects, which represent the given monitor object may not exist.</td>
+</tr>
+</tbody></table>
 
 <h2 id="getlist">getList</h2>
-<pre><code class="highlight plaintext">Use Example
-</code></pre>
 
-<p>Retrieve the list of all requested prime conditions.</p>
+<p>Retrieve the list of all added prime conditions.</p>
+
+<blockquote>
+<p>Use Example</p>
+</blockquote>
+<pre><code class="highlight csharp"><span class="c1">//get a list of current monitored conditions
+</span><span class="n">priCon_List</span> <span class="p">=</span> <span class="n">requestManager</span><span class="p">.</span><span class="nf">getList</span><span class="p">(</span> <span class="p">);</span>
+
+<span class="c1">//check for empty
+</span><span class="n">Bool</span> <span class="n">isEmpty</span> <span class="p">=</span> <span class="p">!</span> <span class="n">priCon_List</span><span class="p">.</span><span class="nf">Any</span><span class="p">(</span> <span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">isEmpty</span><span class="p">){</span>
+  <span class="c1">//empty
+</span><span class="p">}</span>
+<span class="n">Else</span>
+<span class="p">{</span>
+  <span class="c1">//if the list is not empty, it can be used through assign indexes
+</span>  <span class="nf">print</span> <span class="p">(</span> <span class="n">priCon_List</span><span class="p">[</span><span class="err">“</span><span class="n">object12345</span><span class="err">”</span><span class="p">][</span><span class="err">“</span><span class="n">LARGER_THAN</span><span class="err">”</span><span class="p">][</span><span class="err">“</span><span class="m">30</span><span class="err">”</span><span class="p">]</span> <span class="p">);</span>
+<span class="p">}</span>
+</code></pre>
 
 <h3 id="syntax">Syntax</h3>
 
+<table><thead>
+<tr>
+<th></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>PrimeConditionList getList( )</td>
+</tr>
+</tbody></table>
+
 <h3 id="prarameters">Prarameters</h3>
+
+<p>This function does not have input parameters.</p>
 
 <h3 id="return-value">Return Value</h3>
 
-<h3 id="requirements">Requirements</h3>
+<p>If the function succeeds, the return value is a list of prime conditions. If the list is empty, which represents there is not previous added prime conditions, it will return Null.</p>
+
+<p>The returned list is a List Array of prime conditions with indexes [monitorObjectID][logicalOperator]<a href="*the%20definition%20of%20the%20three%20indexes,%20see%20the%20input%20parameter%20part%20in%20createExpression%20function">conditionValue</a>. </p>
+
+<h3 id="exception">Exception</h3>
+
+<p>No exception will happen in the function.</p>
 
 <h2 id="getcondtionlist">getCondtionList</h2>
-<pre><code class="highlight plaintext">Use Example
+
+<p>Retrieve the list of requested prime conditions for a monitored object.</p>
+
+<blockquote>
+<p>Use Example</p>
+</blockquote>
+<pre><code class="highlight csharp"><span class="c1">//get a list of current monitored conditions for a monitor object
+</span><span class="n">priCon_ListForObject</span> <span class="p">=</span> <span class="n">requestManager</span><span class="p">.</span><span class="nf">getConditionList</span><span class="p">(</span> <span class="err">“</span><span class="n">object12345</span><span class="err">”</span><span class="p">);</span>
+
+<span class="c1">//check for empty
+</span><span class="n">Bool</span> <span class="n">isEmpty</span> <span class="p">=</span> <span class="p">!</span> <span class="n">priCon_ListForObject</span><span class="p">.</span><span class="nf">Any</span><span class="p">(</span> <span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">isEmpty</span><span class="p">){</span>
+  <span class="c1">//empty
+</span><span class="p">}</span>
+<span class="n">Else</span>
+<span class="p">{</span>
+  <span class="c1">//if the list is not empty, it can be used through assign indexes
+</span>  <span class="nf">print</span> <span class="p">(</span> <span class="n">priCon_ListForObject</span> <span class="p">[</span><span class="err">“</span><span class="n">LARGER_THAN</span><span class="err">”</span><span class="p">][</span><span class="err">“</span><span class="m">30</span><span class="err">”</span><span class="p">]</span> <span class="p">);</span>
+<span class="p">}</span>
 </code></pre>
 
 <p>Retrieve the list of requested prime conditions for a monitored object.</p>
 
 <h3 id="syntax">Syntax</h3>
 
-<h3 id="prarameters">Prarameters</h3>
+<table><thead>
+<tr>
+<th></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>PrimeConditionList getConditionList( <code class="prettyprint">__In__  monitorObjectID</code>);</td>
+</tr>
+</tbody></table>
+
+<table><thead>
+<tr>
+<th>Prarameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>monitorObjectID [in]</td>
+<td>The ID of a monitor object. If the monitorObjectID matches the ID of an existing monitor object it will be accepted by the function;</td>
+</tr>
+</tbody></table>
 
 <h3 id="return-value">Return Value</h3>
 
-<h3 id="requirements">Requirements</h3>
+<p>If the input monitorObjectID matches an existing monitor object’s ID, the function will succeed. The return value is a list of prime conditions, which related to the monitor object. If the list is empty, which represents there is no previous added prime conditions related to this monitor object, it will return Null.</p>
 
-<h2 id="getcondtion">getCondtion</h2>
-<pre><code class="highlight plaintext">Use Example
-</code></pre>
+<p>The returned list is a List Array of prime conditions with indexes [logicalOperator]<a href="*the%20definition%20of%20the%20two%20indexes,%20see%20the%20input%20parameter%20part%20in%20createExpression%20function">conditionValue</a>. It can be used through assign indexes (see the use sample).</p>
 
-<p>Retrieve a prime condition.</p>
+<h3 id="exception">Exception</h3>
 
-<h3 id="syntax">Syntax</h3>
+<p>This function will fail, when the input monitorObjectID does not exist. </p>
 
-<h3 id="prarameters">Prarameters</h3>
-
-<h3 id="return-value">Return Value</h3>
-
-<h3 id="requirements">Requirements</h3>
+<table><thead>
+<tr>
+<th>Exception</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>OBJECT_EXIST_ EXCEPTION</td>
+<td>The function will fail when the given monitor object ID does not in existing monitor objects, which represent the given monitor object may not exist.</td>
+</tr>
+</tbody></table>
 
 <h2 id="setnotificationcondition">setNotificationCondition</h2>
-<pre><code class="highlight plaintext">Use Example
-</code></pre>
 
-<p>Sets notification conditions for request monitor and notification services. It is to specify that in what condition IASS should notify receivers.</p>
+<p>Sets notification conditions for request monitor and notification services. It is to specify that in what condition IASS should trigger notification actions.</p>
+
+<blockquote>
+<p>Use Example</p>
+</blockquote>
+<pre><code class="highlight csharp"><span class="c1">//add a notification condition
+</span><span class="n">noti_Con</span> <span class="p">=</span> <span class="n">requestManager</span><span class="p">.</span><span class="nf">addNotificationCondition</span><span class="p">(</span>
+<span class="m">100</span><span class="p">,</span>
+<span class="p">(</span><span class="n">TODO</span><span class="p">)</span>
+<span class="p">);</span>
+</code></pre>
 
 <h3 id="syntax">Syntax</h3>
 
-<h3 id="prarameters">Prarameters</h3>
+<table><thead>
+<tr>
+<th></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>NotificationConditionID addNewCondition(<code class="prettyprint">__In__  responseTimeInterval</code> <code class="prettyprint">__In  __  ContextString</code>);</td>
+</tr>
+</tbody></table>
+
+<table><thead>
+<tr>
+<th>Prarameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>responseTimeInterval [in]</td>
+<td>It is the response time interval, in milliseconds. It represents the time tolerance between the happening of a notification condition and the receiving of notifications. If a nonzero value is specified, when a notification condition is detected happening, notifications should be received by receivers within the specified response time interval.</td>
+</tr>
+<tr>
+<td>ContextString [in]</td>
+<td>The ContextString is a description of a notification conditions, it follows the logical rules and tokens supported by Simple Rule Engine(1*).</td>
+</tr>
+</tbody></table>
+
+<p>(1*) Simple Rule Engine : SRE (Simple Rule Engine) is a lightweight forward chaining inference rule engine for .NET. Its &lsquo;simple&rsquo; because of the simplicity in writing and understanding the rules written in XML, but this &#39;simple&rsquo; engine can solve complex problems. 
+http://sourceforge.net/projects/sdsre/
+http://simpleruleengine.tripod.com/</p>
+
+<p>(2*) Evaluation Engine: The Evaluation Engine is a parser and interpreter that can be used to build a Business Rules Engine. It allows for mathematical and boolean expressions, operand functions, variables, variable assignment, comments, and short-circuit evaluation. A syntax editor is also included.
+http://www.codeproject.com/Articles/26314/Evaluation-Engine</p>
+
+<p>(3*) Jess: Jess is a rule engine for the Java platform. To use it, you specify logic in the form of rules using one of two formats: the Jess rule language (prefered) or XML.
+http://www.jessrules.com/doc/70/index.html</p>
 
 <h3 id="return-value">Return Value</h3>
 
-<h3 id="requirements">Requirements</h3>
+<p>If the function succeeds, the return value will be the unique ID of the input notification condition.</p>
 
-<h2 id="addnotificationaction">addNotificationAction</h2>
-<pre><code class="highlight plaintext">Use Example
+<p>If the function fails, the return value will be Null.</p>
+
+<h3 id="exception">Exception</h3>
+
+<p>If the function fails, according to different situations, it might have following exceptions.</p>
+
+<table><thead>
+<tr>
+<th>Exception</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>TIME_INTERVAL_ EXCEPTION</td>
+<td>The function will fail, if the required response time is lower than the lowest time interval that supported by IASS.</td>
+</tr>
+<tr>
+<td>RULE_SYNTAX_EXCEPTION</td>
+<td>The function will fail, if the input context expression not follows the supported syntax.</td>
+</tr>
+<tr>
+<td>CONDITION_EXIST_EXCEPTION</td>
+<td>The function will fail, if the one or more of conditions in the context expression cannot be found. That is, the assigned prime condition ID might be wrong.</td>
+</tr>
+</tbody></table>
+
+<h2 id="createnotificationaction">createNotificationAction</h2>
+
+<p>Create a notification action which composed by (notificationType, parameterArray) and returns it in NotificationAction data type. The Returned NotificationActionID is used to express an assigned notification action.</p>
+
+<blockquote>
+<p>Use Example</p>
+</blockquote>
+<pre><code class="highlight csharp"><span class="c1">// to create a notification action
+</span><span class="n">notiAct</span> <span class="p">=</span> <span class="n">requestManager</span><span class="p">.</span><span class="nf">createNotificationAction</span> <span class="p">(</span>
+<span class="n">WAKE_UP_PROCESS</span><span class="p">,</span> 
+<span class="n">processID98765</span>
+<span class="p">);</span>
 </code></pre>
+
+<h3 id="syntax">Syntax</h3>
+
+<table><thead>
+<tr>
+<th></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>NotificationActionID createNotificationAction(<code class="prettyprint">__In__  notificationType</code> <code class="prettyprint">__In  __  parameterArray</code>);</td>
+</tr>
+</tbody></table>
+
+<table><thead>
+<tr>
+<th>Prarameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>notificationType [in]</td>
+<td>It is the type of a notification action.</td>
+</tr>
+<tr>
+<td>parameterArray [in]</td>
+<td>It is an array of required parameters of a notification action. The numbers, types, and content of the parameters depends on the type of chosen notification action.</td>
+</tr>
+</tbody></table>
+
+<h3 id="return-value">Return Value</h3>
+
+<p>If the function succeeds, the return value will be the unique ID of the input notification action.</p>
+
+<p>If the function fails, the return value will be Null.</p>
+
+<h3 id="exception">Exception</h3>
+
+<p>This function will fail, when the input notification parameters not match the chosen notification type.</p>
+
+<table><thead>
+<tr>
+<th>Exception</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>PARAMETER_EXCEPTION</td>
+<td>The exception will report, when the input parameters not match the chosen type of notification action.</td>
+</tr>
+</tbody></table>
+
+<h3 id="addnotificationaction">addNotificationAction</h3>
 
 <p>Set notification actions which should be taken when a specific notification condition happens.</p>
 
+<blockquote>
+<p>Use Example</p>
+</blockquote>
+<pre><code class="highlight csharp"><span class="c1">//add notification actions. When the notification condition 11235 happens, do action001 and action002.
+</span><span class="n">requestManager</span><span class="p">.</span><span class="nf">addNotificationAction</span><span class="p">(</span>
+<span class="err">“</span><span class="n">notificationCondition11235</span><span class="err">”</span><span class="p">,</span>
+<span class="err">“</span><span class="n">action001</span><span class="err">”</span><span class="p">,</span>
+<span class="err">”</span><span class="n">action002</span><span class="err">”</span>
+<span class="p">);</span>
+</code></pre>
+
 <h3 id="syntax">Syntax</h3>
 
-<h3 id="prarameters">Prarameters</h3>
+<table><thead>
+<tr>
+<th></th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Void assignPossibleSubscriber( <code class="prettyprint">__In__  NotificationConditionID</code> , <code class="prettyprint">__In__  NotificationActionList</code>);</td>
+</tr>
+</tbody></table>
 
-<h3 id="return-value">Return Value</h3>
+<table><thead>
+<tr>
+<th>Prarameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>NotificationConditionID [in]</td>
+<td>It is the unique ID of a notification condition.</td>
+</tr>
+<tr>
+<td>NotificationActionArray [in]</td>
+<td>It is an array of notification actions.</td>
+</tr>
+</tbody></table>
 
-<h3 id="requirements">Requirements</h3>
+<h3 id="return-value">Return value</h3>
+
+<p>This constructor does not return a value.</p>
+
+<h3 id="exception">Exception</h3>
+
+<p>This function will fail, when the input notification condition or notification action do not exist.</p>
+
+<table><thead>
+<tr>
+<th>Exception</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>CON_EXIST _EXCEPTION</td>
+<td>If the input notification condition ID does not match any of existing notification conditions, the function will fail.</td>
+</tr>
+<tr>
+<td>ACTION_EXIST_EXCEPTION</td>
+<td>If one or more of input notification action IDs do not match any of existing notification actions, the function will fail.</td>
+</tr>
+</tbody></table>
 
 <h1 id="browsing-functions">Browsing Functions</h1>
 
@@ -309,7 +729,7 @@ Remember — a happy kitten is an authenticated kitten!
       </div>
       <div class="dark-box">
           <div class="lang-selector">
-                <a href="#" data-language-name="C#">C#</a>
+                <a href="#" data-language-name="c#">c#</a>
           </div>
       </div>
     </div>

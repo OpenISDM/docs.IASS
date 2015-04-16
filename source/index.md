@@ -17,45 +17,51 @@ Welcome to the IASS API! You can use our API to access IASS API endpoints, which
 
 We have language bindings in C Sharp(C#)! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
+This documentaiton contains the reference for the IASS APIs and services offered by IASS for applications. These include available services for:
 
-<aside class="notice">to be describe a box environment (POS)</aside>
+ - Request monitor and notification service
+ - Browse monitor objects
+
+
+<aside class="notice">This IASS API was designed as of April 2, 2015. Its last day of revision is April 14, 2015.</aside>
 
 
 # Definitions
 
 Terms | Description
 ----- | -----------
-Prime Condition | A PrimeCondition is one of possible situations of a monitored object, which means it happens or will happen on the monitored object. It will include a monitored object ID, a `logical operator`, and a `condition value`. 
-NotificationCondtion | A NotificationCondition is a logical expression whose context contains prime conditions in it. It represents the condition—when should IASS notify receivers. If it returns TRUE, notification action will be triggered.
-NotificationCondtion | A NotificationCondition is a logical expression whose context contains prime conditions in it. It represents the condition—when should IASS notify receivers. If it returns `TRUE`, notification action will be triggered.
-NotificationAction | A Notification action is an action that will be triggered when notification conditions happen.
-Logical operator | <ul><li>larger than ( > ): LARGET_THAN</li><li>smaller than ( < ): SMALLER_THAN</li><li>equal ( = ): EQUAL</li><li>not ( ! ): NOT</li><li>not less than ( >= ): NOT_LESS</li><li>not more than ( <= :) NOT_MORE</li></ul>
-Condition value | It could be several forms: a word string, a boolean value, an integer, and a decimal. The type of condition values based on monitor object in interest.
+Prime Condition | A `Prime Condition` is one of possible situations of a monitored object, which means it happens or will happen on the monitored object. It will include a ID of `monitored object`, a `logical operator`, and a `condition value`. 
+Notification Condtion | A `Notification Condition` is a logical expression whose context contains prime conditions in it. It represents the condition—when should IASS notify receivers. If it returns `TRUE`, notification action will be triggered.
+Notification Action | A `Notification Action` is an action that will be triggered when notification conditions happen.
+Logical operator | <ul><li>larger than ( > ): `LARGET_THAN`</li><li>smaller than ( < ): `SMALLER_THAN`</li><li>equal ( = ): `EQUAL`</li><li>not ( ! ): `NOT`</li><li>not less than ( >= ): `NOT_LESS`</li><li>not more than ( <= :) `NOT_MORE`</li></ul>
+Condition Value | It could be several forms: a word string, a boolean value, an integer, and a decimal. The type of condition values based on monitor object in interest.
 
 
 
 # Request Functions
 
-The functions described in this overview provide ways to set a monitor service request. From setting prime conditions, a possible condition of an object, for objects in interest to setting required notification condition, and then assign receivers accordingly.
+The Request functions described in this overview provide ways to set a monitor service request. From setting prime conditions, a possible condition of an object, for objects in interest to setting required notification condition, and then assign receivers accordingly.
 
 
 ### Constructor
 
 > Use Example
 
-> import functions for request IASS services, construct a request manager to call methods of setting and using monitor and notification services.
-
 ```c#
+//import functions for request IASS services
 using IASS.Request
 
-requestManager = New RequestFunctions( );
+//construct a request manager to call methods of setting and using monitor and notification services.
+requestManager = New Request( );
+
 ```
+
 
 ###Syntax
 
                     |
 ------------------- |
-RequestFunctions( ) |
+Request( ) |
 
 ###Prarameters
 This constructor does not have input parameters.
@@ -64,17 +70,16 @@ This constructor does not have input parameters.
 This constructor will not return value.
 
 
-
 ## createExpression
 
-Creates an expression which composed by (monitor object ID, logical operator, condition value) and returns it in Expression data type.
+Creates an expression which composed by (`monitor object ID`, `logical operator`, `condition value`) and returns it in Expression data type.
 
 
 > Use Example
 
-> generate a logical expression for a monitor condition
 
 ```c#
+//generate a logical expression for a monitor condition
 priCon_expression = requestManager.createExpression(
   object12345,
   LARGER_THAN,
@@ -92,9 +97,9 @@ Expression createLogicalExpression( `__In__  monitoredObjectID`, `__In__  logica
 
 Prarameters | Description
 ----------- | -----------
-monitoredObjectID [in]  | The ID of a monitor object. If the monitorObjectID matches the ID of an existing monitor object it will be accepted by the function; otherwise, OBJECT_EXIST_ERROR will be returned.
-logicalOperator [in] | This parameter is one of elements in the operator set {`LARGER_THAN`, `SMALLER_THAN`, `EQUAL`, `NOT`, `NOT_LESS`, `NOT_MORE`} If the logical operator is not feasible for the type of condition value, LOGICAL_ERROR will be returned. Types and feasible logical operators: <ul><li>Integer (numerical):LARGER_THAN, SMALLER_THAN, EQUAL, NOT, NOT_LESS, NOT_MORE.</li><li>Decimal (numerical):LARGER_THAN, SMALLER_THAN, EQUAL, NOT, NOT_LESS, NOT_MORE.</li><li>Boolean value (not numerical):EQUAL, NOT.</li><li>String (not numerical):EQUAL, NOT.</li></ul>
-conditionValue [in] | This parameter is a numerical value or a string which represent a Boolean result or a specific content in monitor object. If the type of condition value mismatch with the type of value in monitor object, TYPE_MISMATCH_ERROR will be returned.
+monitoredObjectID [in]  | The ID of a monitor object. If the `monitorObjectID` matches the ID of an existing monitor object it will be accepted by the function; otherwise, `OBJECT_EXIST_ERROR` will be returned.
+logicalOperator [in] | This parameter is one of elements in the operator set {`LARGER_THAN`, `SMALLER_THAN`, `EQUAL`, `NOT`, `NOT_LESS`, `NOT_MORE`} If the logical operator is not feasible for the type of condition value, `LOGICAL_ERROR` will be returned. Types and feasible logical operators: <ul><li>Integer (numerical):`LARGER_THAN`, `SMALLER_THAN`, `EQUAL`, `NOT`, `NOT_LESS`, `NOT_MORE`.</li><li>Decimal (numerical):`LARGER_THAN`, `SMALLER_THAN`, `EQUAL`, `NOT`, `NOT_LESS`, `NOT_MORE`.</li><li>Boolean value (not numerical):`EQUAL`, `NOT`.</li><li>String (not numerical):`EQUAL`, `NOT`.</li></ul>
+conditionValue [in] | This parameter is a numerical value or a string which represent a Boolean result or a specific content in monitor object. If the type of condition value mismatch with the type of value in monitor object, `TYPE_MISMATCH_ERROR` will be returned.
 
 
 ###Return Value
@@ -118,9 +123,9 @@ To add one or more prime conditions that will be used to describe a notification
 
 > Use Example
 
-> add new prime conditions
 
 ```c#
+//add new prime conditions
 requestManager.addPrimeCondition(
   priCon_expression,
   priConManager. createExpression(object12345, EQUAL, 50),
@@ -171,7 +176,7 @@ if (isEmpty){
 Else
 {
   //if the list is not empty, it can be used through assign indexes
-  print ( priCon_List[“object12345”][“LARGER_THAN”][“30”] );
+  print ( priCon_List["object12345"]["LARGER_THAN"]["30"] );
 }
 ```
 
@@ -187,7 +192,7 @@ This function does not have input parameters.
 ###Return Value
 If the function succeeds, the return value is a list of prime conditions. If the list is empty, which represents there is not previous added prime conditions, it will return Null.
 
-The returned list is a List Array of prime conditions with indexes [monitorObjectID][logicalOperator][conditionValue] (*the definition of the three indexes, see the input parameter part in createExpression function). 
+The returned list is a List Array of prime conditions with indexes `MonitorObjectID`,`logicalOperator`,`conditionValue`.(the definition of the three indexes, see the input parameter part in createExpression function). 
 
 ###Exception
 No exception will happen in the function.
@@ -200,7 +205,7 @@ Retrieve the list of requested prime conditions for a monitored object.
 
 ```c#
 //get a list of current monitored conditions for a monitor object
-priCon_ListForObject = requestManager.getConditionList( “object12345”);
+priCon_ListForObject = requestManager.getConditionList("object12345");
 
 //check for empty
 Bool isEmpty = ! priCon_ListForObject.Any( );
@@ -210,7 +215,7 @@ if (isEmpty){
 Else
 {
   //if the list is not empty, it can be used through assign indexes
-  print ( priCon_ListForObject [“LARGER_THAN”][“30”] );
+  print ( priCon_ListForObject["LARGER_THAN"]["30"] );
 }
 ```
 
@@ -224,12 +229,12 @@ PrimeConditionList getConditionList( `__In__  monitorObjectID`);|
 
 Prarameters | Description
 ----------- | -----------
-monitorObjectID [in] | The ID of a monitor object. If the monitorObjectID matches the ID of an existing monitor object it will be accepted by the function; 
+monitorObjectID [in] | The ID of a monitor object. If the `monitorObjectID`matches the ID of an existing monitor object it will be accepted by the function; 
 
 ###Return Value
-If the input monitorObjectID matches an existing monitor object’s ID, the function will succeed. The return value is a list of prime conditions, which related to the monitor object. If the list is empty, which represents there is no previous added prime conditions related to this monitor object, it will return Null.
+If the input `monitorObjectID` matches an existing monitor object’s ID, the function will succeed. The return value is a list of prime conditions, which related to the monitor object. If the list is empty, which represents there is no previous added prime conditions related to this monitor object, it will return Null.
 
-The returned list is a List Array of prime conditions with indexes [logicalOperator][conditionValue] (*the definition of the two indexes, see the input parameter part in createExpression function). It can be used through assign indexes (see the use sample).
+The returned list is a List Array of prime conditions with indexes `logicalOperator`,`conditionValue`. (the definition of the two indexes, see the input parameter part in createExpression function). It can be used through assign indexes (see the use sample).
 
 ###Exception
 This function will fail, when the input monitorObjectID does not exist. 
@@ -247,10 +252,23 @@ Sets notification conditions for request monitor and notification services. It i
 
 ```c#
 //add a notification condition
-noti_Con = requestManager.addNotificationCondition(
-100,
-(TODO)
-);
+
+String context = " 
+
+  <Rules> 
+    <Rule id="R1" desc="expression"> 
+      <Condition><![CDATA[ ISNULL(FACT(Condition001)) ]]></Condition> 
+    </Rule> 
+  </Rules> 
+
+  <Facts> 
+    <Fact id="Condition001" type="string">
+      <xpath><![CDATA[ //Condition001 ]]></xpath>
+    </Fact> 
+  </Facts>
+"
+
+noti_Con = requestManager.addNotificationCondition( 100, context);
 ```
 
 
@@ -264,6 +282,9 @@ Prarameters | Description
 ----------- | -----------
 responseTimeInterval [in] | It is the response time interval, in milliseconds. It represents the time tolerance between the happening of a notification condition and the receiving of notifications. If a nonzero value is specified, when a notification condition is detected happening, notifications should be received by receivers within the specified response time interval.
 ContextString [in] | The ContextString is a description of a notification conditions, it follows the logical rules and tokens supported by Simple Rule Engine(1*).
+
+<aside class="notice">What operators can be used in expressions? It is important to note that all operators, expressions, and id of facts are case sensitive. `ISNULL` ,`FACT`,` ==`,`!= `,` -`, `+ `,`*`,` /`,` AND`,` OR`,` NOT`.</aside>
+
 
 (1*) Simple Rule Engine : SRE (Simple Rule Engine) is a lightweight forward chaining inference rule engine for .NET. Its 'simple' because of the simplicity in writing and understanding the rules written in XML, but this 'simple' engine can solve complex problems. 
 http://sourceforge.net/projects/sdsre/
@@ -298,10 +319,7 @@ Create a notification action which composed by (notificationType, parameterArray
 
 ```c#
 // to create a notification action
-notiAct = requestManager.createNotificationAction (
-WAKE_UP_PROCESS, 
-processID98765
-);
+notiAct = requestManager.createNotificationAction( WAKE_UP_PROCESS, rocessID98765);
 ```
 
 ###Syntax
@@ -330,7 +348,7 @@ PARAMETER_EXCEPTION | The exception will report, when the input parameters not m
 
 
 
-###addNotificationAction
+## addNotificationAction
 Set notification actions which should be taken when a specific notification condition happens.
 
 > Use Example
@@ -338,9 +356,9 @@ Set notification actions which should be taken when a specific notification cond
 ```c#
 //add notification actions. When the notification condition 11235 happens, do action001 and action002.
 requestManager.addNotificationAction(
-“notificationCondition11235”,
-“action001”,
-”action002”
+  "notificationCondition11235",
+  "action001",
+  "action002"
 );
 ```
 
@@ -371,113 +389,4 @@ ACTION_EXIST_EXCEPTION | If one or more of input notification action IDs do not 
 
 # Browsing Functions
 
-
-
-# Template_Kittens
-
-## Get All Kittens
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get()
-```
-
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
-```
-
-> The above command returns JSON structured like this:
-
-```json
-[
-  {
-    "id": 1,
-    "name": "Fluffums",
-    "breed": "calico",
-    "fluffiness": 6,
-    "cuteness": 7
-  },
-  {
-    "id": 2,
-    "name": "Isis",
-    "breed": "unknown",
-    "fluffiness": 5,
-    "cuteness": 10
-  }
-]
-```
-
-This endpoint retrieves all kittens.
-
-### HTTP Request
-
-`GET http://example.com/kittens`
-
-### Query Parameters
-
-Parameter | Default | Description
---------- | ------- | -----------
-include_cats | false | If set to true, the result will also include cats.
-available | true | If set to false, the result will include kittens that have already been adopted.
-
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
-
-## Get a Specific Kitten
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get(2)
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get(2)
-```
-
-```shell
-curl "http://example.com/api/kittens/3"
-  -H "Authorization: meowmeowmeow"
-```
-
-> The above command returns JSON structured like this:
-
-```json
-{
-  "id": 2,
-  "name": "Isis",
-  "breed": "unknown",
-  "fluffiness": 5,
-  "cuteness": 10
-}
-```
-
-This endpoint retrieves a specific kitten.
-
-<aside class="warning">If you're not using an administrator API key, note that some kittens will return 403 Forbidden if they are hidden for admins only.</aside>
-
-### HTTP Request
-
-`GET http://example.com/kittens/<ID>`
-
-### URL Parameters
-
-Parameter | Description
---------- | -----------
-ID | The ID of the cat to retrieve
 

@@ -89,7 +89,7 @@
 </tr>
 </tbody></table>
 
-<h1 id="request-functions">Request Functions</h1>
+          <h1 id="request-functions">Request Functions</h1>
 
 <p>The Request functions described in this overview provide ways to set a monitor service request. From setting prime conditions, a possible condition of an object, for objects in interest to setting required notification condition, and then assign receivers accordingly.</p>
 
@@ -620,7 +620,1642 @@ http://www.jessrules.com/doc/70/index.html</p>
 </tr>
 </tbody></table>
 
-<h1 id="browsing-functions">Browsing Functions</h1>
+          <h1 id="browsing-functions">Browsing Functions</h1>
+<pre><code class="highlight json"><span class="p">{</span><span class="w">
+  </span><span class="s2">"DataSet"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"Name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"全台雨量觀測資料"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"UUID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"da010bf7afe2700c3521d2b4d38b68a8"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"URL"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.cwb.gov.tw/V7/observe/rainfall/A136.htm"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"Targets"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"花蓮縣豐濱鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣豐濱鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣壽豐鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣豐濱鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣壽豐鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣豐濱鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"彰化縣埤頭鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣秀林鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣壽豐鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣延平鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣新城鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣壽豐鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市平溪區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣壽豐鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣卓溪鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣光復鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣成功鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新竹縣關西鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市三峽區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣卓溪鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市三峽區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市新店區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市新化區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"雲林縣西螺鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市坪林區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣大同鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新竹縣尖石鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"桃園市龍潭區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣壽豐鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣蘭嶼鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣秀林鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣萬榮鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣壽豐鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣光復鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣新城鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣玉里鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市雙溪區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市雙溪區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣大同鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣花蓮市"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣鳳林鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣萬榮鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣鳳林鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣卑南鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣玉里鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣吉安鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣萬榮鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣卓溪鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣光復鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市新店區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣萬榮鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新竹縣尖石鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣秀林鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"桃園市大溪區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺北市北投區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新竹縣芎林鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市平溪區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣東河鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市貢寮區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市新店區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣萬榮鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣瑞穗鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市三峽區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市石碇區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市雙溪區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"桃園市八德區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市坪林區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市坪林區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市坪林區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣頭城鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新竹縣五峰鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新竹縣新埔鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"彰化縣埔心鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"嘉義縣大林鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市七股區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市佳里區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣海端鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市安南區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市七股區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣海端鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市桃源區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市西港區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣琉球鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣春日鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市桃源區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣枋寮鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣恆春鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣春日鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市桃源區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣佳冬鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣林邊鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣南澳鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣春日鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市甲仙區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣枋山鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市六龜區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣埔里鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣海端鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣枋山鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣水里鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣恆春鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣春日鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市甲仙區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市桃源區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣牡丹鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣牡丹鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市南化區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣牡丹鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市安平區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市桃源區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣新埤鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣屏東市"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣海端鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市山上區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣牡丹鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市麻豆區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣南澳鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣恆春鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市茄萣區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市安定區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣達仁鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市南化區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市六龜區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市桃源區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣恆春鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市南化區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣獅子鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市桃源區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣牡丹鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣海端鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣達仁鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣秀林鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣太麻里鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣南州鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市萬里區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣牡丹鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣東港鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市桃源區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市善化區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市桃源區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市瑞芳區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市內門區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣車城鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市東山區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣泰武鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣大武鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣太麻里鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣滿州鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市內門區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣卑南鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣三灣鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市白河區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣萬巒鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣冬山鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣來義鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣來義鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市杉林區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣員山鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市下營區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市六龜區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市內門區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"嘉義縣大埔鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市那瑪夏區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市桃源區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市官田區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市南化區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市歸仁區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市中西區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣鳳林鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣崁頂鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣鹿野鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣大武鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣滿州鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新竹縣峨眉鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市北區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣金峰鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市龍崎區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣卓溪鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣三灣鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市美濃區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市田寮區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市杉林區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣太麻里鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市南區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣太麻里鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣南澳鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市新興區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市新營區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣新園鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市汐止區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市旗山區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣泰武鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新竹縣寶山鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣潮州鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣富里鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市楠西區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣泰武鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市苓雅區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣信義鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣仁愛鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市桃源區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣大同鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"桃園市龍潭區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市南化區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市東山區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣冬山鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市金山區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣仁愛鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新竹縣竹東鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市田寮區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市茂林區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市小港區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣海端鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣秀林鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市那瑪夏區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣卓溪鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣仁愛鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣仁愛鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣潮州鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣卓溪鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市新市區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市東山區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣太麻里鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市旗山區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市關廟區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市三民區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市龍崎區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣金峰鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市大寮區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"雲林縣北港鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市茂林區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市瑞芳區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣富里鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣秀林鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市鼓山區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣秀林鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市玉井區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣長濱鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市左鎮區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣海端鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣信義鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"嘉義縣大埔鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣延平鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣萬丹鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市美濃區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市六甲區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣秀林鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市瑞芳區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣關山鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣仁愛鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市旗津區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣萬丹鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市桃源區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市旗山區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣礁溪鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣卑南鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市三峽區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市永康區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣卑南鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市阿蓮區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市大內區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市北門區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新竹縣關西鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣卑南鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣鹿野鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"雲林縣古坑鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣竹田鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣瑪家鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市前鎮區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣仁愛鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市楠西區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣東河鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市瑞芳區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣光復鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣富里鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"桃園市復興區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"澎湖縣望安鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市石碇區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣臺東市"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市大內區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣霧台鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市湖內區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市仁德區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市白河區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣秀林鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"桃園市平鎮區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣三地門鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"嘉義縣番路鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市白河區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣大同鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣麟洛鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市歸仁區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市林園區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣三地門鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣萬巒鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣仁愛鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣頭屋鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市岡山區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"桃園市龜山區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"嘉義縣番路鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣內埔鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"雲林縣古坑鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市太平區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市白河區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣瑪家鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"嘉義縣番路鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣信義鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣三地門鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣南庄鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣三地門鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣仁愛鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣蘇澳鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣南庄鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣高樹鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣信義鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市梓官區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市永安區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣埔里鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣頭份鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣長治鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣成功鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"桃園市龍潭區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"桃園市楊梅區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣臺東市"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市六甲區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新竹縣尖石鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"雲林縣北港鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣冬山鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市白河區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣大同鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣獅潭鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"嘉義縣阿里山鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣內埔鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"嘉義縣大林鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市橋頭區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"澎湖縣望安鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市鳳山區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣光復鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市燕巢區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市路竹區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"嘉義縣番路鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣冬山鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新竹縣橫山鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣霧台鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣南澳鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣大同鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市新化區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市瑞芳區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣屏東市"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新竹縣新埔鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新竹縣寶山鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市樹林區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣屏東市"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣大同鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣竹山鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣大同鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"嘉義縣番路鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣三星鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣竹山鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣富里鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣瑞穗鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣礁溪鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市左營區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市美濃區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣東河鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣仁愛鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣瑪家鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣信義鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣卑南鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣信義鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"基隆市七堵區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣獅潭鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市土城區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣來義鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣員山鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市仁武區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市烏來區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣鹽埔鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣信義鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣鹿谷鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣泰安鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"澎湖縣馬公市"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市東山區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣信義鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺北市大安區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市六龜區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"雲林縣口湖鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺北市陽明山"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"澎湖縣白沙鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"嘉義縣中埔鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市鶯歌區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"雲林縣斗六市"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市和平區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"雲林縣西螺鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市汐止區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"嘉義縣竹崎鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣秀林鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣三星鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市彌陀區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市大樹區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新竹市香山區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣仁愛鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新竹縣竹北市"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"雲林縣崙背鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"雲林縣古坑鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣造橋鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市淡水區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"彰化縣大城鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市大社區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市金山區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣信義鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"嘉義縣阿里山鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"桃園市桃園區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣信義鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市深坑區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣後龍鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市新店區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣仁愛鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣池上鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣信義鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣高樹鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市柳營區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"雲林縣褒忠鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣水里鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"彰化縣二水鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市燕巢區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市板橋區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺北市文山區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市燕巢區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣里港鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣信義鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市桃源區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"嘉義縣東石鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市龍井區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣信義鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺北市內湖區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市大雅區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市貢寮區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市楠梓區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市烏來區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東縣九如鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市坪林區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣水里鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"雲林縣四湖鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺北市陽明山"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市石碇區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市和平區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市茂林區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣蘇澳鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣五結鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市永和區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣信義鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣水里鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"嘉義縣阿里山鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣竹南鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市潭子區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新竹市香山區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市烏來區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"彰化縣福興鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣信義鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣大同鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"金門縣"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市瑞芳區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市坪林區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣大湖鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣長濱鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市和平區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣仁愛鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市三芝區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣仁愛鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"嘉義縣溪口鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市大安區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"嘉義縣竹崎鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新竹縣尖石鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣水里鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣銅鑼鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣草屯鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市新社區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣竹南鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市大甲區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣大同鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新竹縣五峰鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新竹縣五峰鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣國姓鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"彰化縣社頭鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣南澳鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣竹山鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新竹縣尖石鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣埔里鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣仁愛鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市太平區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新竹縣新埔鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"基隆市"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市和平區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"桃園市觀音區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新竹縣尖石鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市西屯區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"桃園市龜山區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣信義鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺北市陽明山"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市烏來區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"彰化縣田尾鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣信義鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣羅東鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺北市"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"彰化縣溪湖鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣竹山鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣延平鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣魚池鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣集集鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市林口區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新竹市東區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺北市中山區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣南澳鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市清水區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新竹市北區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"桃園市大園區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"彰化縣秀水鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣南投市"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣大同鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣大湖鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市石碇區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣三義鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣魚池鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市和平區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣國姓鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣通霄鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"雲林縣麥寮鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市后里區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"嘉義縣竹崎鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺北市北投區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"彰化縣鹿港鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新竹縣尖石鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東縣綠島鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣名間鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣卓蘭鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"基隆市彭佳嶼"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市東勢區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市東勢區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣大同鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣南庄鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"彰化縣芳苑鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"雲林縣褒忠鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣大同鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"桃園市復興區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"彰化縣鹿港鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"嘉義縣竹崎鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市霧峰區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣泰安鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣泰安鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"嘉義縣水上鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣礁溪鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市五股區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市南屯區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"嘉義縣竹崎鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新竹縣新豐鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"彰化縣溪州鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣中寮鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市汐止區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣造橋鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣中寮鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣仁愛鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新竹縣五峰鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺北市北投區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣南澳鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市外埔區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"彰化縣花壇鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣草屯鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"彰化縣溪州鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣泰安鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣後龍鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣仁愛鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣草屯鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"嘉義縣番路鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣頭城鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市豐原區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新竹縣尖石鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣西湖鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣竹山鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣泰安鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市東勢區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市石岡區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"嘉義縣義竹鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣秀林鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市新莊區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣水里鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市鳳山區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣大湖鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"金門縣金城鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"彰化縣員林鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣大同鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣國姓鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣苗栗市"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"彰化縣二林鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣萬榮鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"彰化縣芬園鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"雲林縣虎尾鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市和平區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣泰安鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣大湖鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南市鹽水區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣羅東鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺北市南港區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市新社區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市平溪區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣仁愛鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"嘉義縣梅山鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"彰化縣北斗鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"雲林縣林內鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"彰化縣二林鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"桃園市復興區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣國姓鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"桃園市中壢區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市和平區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣宜蘭市"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣南庄鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣泰安鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市和平區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"桃園市楊梅區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺北市水源路"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣信義鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"彰化縣埔鹽鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣國姓鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市東勢區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣通霄鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市和平區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣埔里鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市蘆洲區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"雲林縣斗南鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市大里區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"嘉義縣溪口鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣水里鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣公館鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣大湖鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣頭份鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市梧棲區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市東勢區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣埔里鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣集集鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣後龍鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"雲林縣土庫鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"彰化縣伸港鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"連江縣南竿鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣鹿谷鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"桃園市復興區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣苑裡鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣南投市"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣秀林鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市新社區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣壯圍鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣泰安鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣泰安鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"基隆市七堵區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣頭城鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣卓蘭鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"彰化縣田中鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"嘉義縣太保市"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市大肚區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣國姓鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市石門區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新竹縣湖口鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市和平區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"雲林縣古坑鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市太平區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"雲林縣麥寮鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗縣三義鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"嘉義縣太保市"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市神岡區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"雲林縣林內鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市烏日區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市東沙島"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣仁愛鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭縣冬山鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市瑞芳區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"彰化縣彰化市"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市和平區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新竹縣北埔鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"桃園市新屋區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"嘉義市"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市和平區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣國姓鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮縣秀林鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"嘉義縣竹崎鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市新店區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"桃園市復興區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投縣仁愛鄉"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市中和區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市三重區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市林口區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺北市士林區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市八里區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市和平區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺中市北屯區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺北市內湖區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"桃園市蘆竹區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高雄市阿蓮區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺北市士林區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新北市石門區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺北市信義區"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺北市士林區"</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="s2">"MonitoredObject"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"ChangeStatus"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="s2">"true"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"false"</span><span class="w">
+          </span><span class="p">],</span><span class="w">
+          </span><span class="s2">"ObservationStationCodes"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="s2">"豐濱 (01T73)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"加路蘭山 (C0T9H)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"月眉山 (C0T9A)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"豐濱 (C0T9I)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大坑 (C0T9E)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"靜浦 (C0T9M)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"埤頭 (C0G83)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"水源 (C0T9B)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"水璉 (C0T9F)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"紅葉山 (C0S68)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"北埔 (01T50)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"壽豐 (C1T89)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"火燒寮 (01A20)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"中興 (C1T92)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"卓麓(4) (01T22)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"東富 (01T9L)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"南美山 (C1S87)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"關西 (C0D39)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"熊空山 (01AG1)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"太平國小 (O1T82)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"三峽 (01A22)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"新店 (A0A9M)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"虎頭埤 (01O71)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"西螺(2) (01J10)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"坪林 (01A17)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"四季 (01U78)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"梅花 (01D18)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"石門 (01C40)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"鯉魚潭 (C0T87)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"蘭嶼 (46762)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"三棧 (C1Z09)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"太安 (C1T95)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"東華 (C0Z10)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大農 (C1T97)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"新城 (C0T84)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"玉里 (C0Z06)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"泰平 (C0A55)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"太平 (L1A84)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"古魯 (C1U51)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"花蓮 (46699)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"鳳林 (C1T93)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大觀 (C1T94)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"鳳義坑 (swc08)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"利嘉 (C1S86)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"高寮 (C1T99)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"吉安 (C1T85)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"東壙 (C1T91)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"立山 (C1Z04)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大興 (swc11)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"四十份 (C1A9N)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"西林 (C0T90)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"鳥嘴山 (C1D40)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"銅門 (C1T86)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大溪 (C0C63)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大屯山 (C0AC4)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"飛鳳山 (C1D63)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"火燒寮 (C0A65)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"都蘭 (C1S63)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"三貂角 (C0A97)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"翡翠 (L1A79)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"紅葉 (C1Z03)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"舞鶴 (C0Z07)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"三峽 (C0AC6)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"十三股 (L1A82)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"雙溪 (C0A89)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"八德 (C0C49)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"碧湖 (L1A80)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"四堵 (C0A54)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"坪林 (L1A83)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"北關 (C1U58)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"白蘭 (C1D41)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"新埔 (C1D38)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"埔心 (C0G81)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"中坑(3) (01L91)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"七股站 (46778)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"佳里 (C0X08)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"向陽(2) (01S47)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"和順 (C0O95)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"七股 (C1X09)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"向陽 (C0S75)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"溪南(特生中心) (C1V58)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"西港 (C0X14)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"琉球嶼 (C0R27)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大漢山 (C1R44)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"藤枝 (C1V60)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"枋寮 (C0R38)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"墾雷 (46779)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"春日 (C0R26)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"小關山 (C1V22)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"佳冬 (C0R54)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"林邊 (C0R53)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"東澳嶺 (C1U84)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大漢山 (01R03)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"甲仙 (C0V25)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"枋山 (C1R33)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"新發 (C1V59)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"北坑 (C1I26)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"霧鹿 (01S43)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"楓港 (C0R40)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"東埔 (01H40)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"恆春 (46759)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"力里 (C1R25)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"甲仙(2) (01P66)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"天池 (01V07)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"牡丹池山 (C0R42)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"牡丹 (01Q86)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"羌黃坑 (88O95)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"石門山 (C1R29)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"安平 (C0X19)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"御油山 (C1V30)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"新埤 (C0R55)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"士文 (01R04)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"摩天 (C1S67)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"山上 (C0X18)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"牡丹 (C1R34)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"麻豆 (C0X12)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"觀音海岸 (C1U85)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"貓鼻頭 (C0R35)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"茄萣 (C0V63)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"安定 (C0X15)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"壽卡 (C1S88)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"南化(2) (01N85)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"高中(2) (O1V54)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"復興 (C0V21)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"墾丁 (C0R36)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"北寮 (C0O83)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"壽卡 (01R00)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"南天池 (C1V19)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"石門 (01Q87)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"下馬 (C1S66)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"土坂 (C1S62)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"和中 (C0T9D)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大溪山 (C0S77)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"南州 (C0R58)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大坪 (C0A86)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"旭海 (C1R30)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"東港 (C0R43)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"高中 (C1V23)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"善化 (C0O90)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"梅山(2) (01V06)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"員山子 (NUP81)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"木柵 (01P19)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"車城 (C1R32)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"北寮 (01O20)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"西大武山 (C1R61)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大鳥 (88S67)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"金崙 (C0S79)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"檳榔 (C0R28)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"溝坪 (O1V81)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"知本 (C0S70)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大河 (C0E44)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"六溪 (01O08)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"來義 (C0R24)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"新寮(1) (01U12)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"來義 (88R46)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"新來義 (01Q35)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"集來 (88V56)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"雙連埤 (C0U52)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"下營 (C1X06)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"六龜 (C0V80)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"內門 (C0V36)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"菜瓜坪 (C1M40)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"民生(達卡努瓦村) (C1V16)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"梅山 (C1V20)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"官田 (C0X13)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"關山 (C1O88)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"沙崙 (C1N00)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"臺南 (46741)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"鳳林山 (C0T9G)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"崁頂 (C0R52)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"鹿野 (C0S71)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大武 (46754)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"佳樂水 (C0R37)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"峨眉 (C0D43)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"臺南市北區 (C0X10)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"賓茂國小 (O1S66)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"崎頂 (C0O96)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"卓樂 (C1Z01)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大河 (01E38)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"美濃(2) (01P77)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"古亭坑 (01P28)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"月眉 (C0V26)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"太麻里 (C0S69)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"臺南市南區 (C0X11)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"金針山 (O1S68)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大濁水 (01U23)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"新興 (C0V49)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大竹坑 (O1N1A)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"新園 (C0R56)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"五指山 (C0A87)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"旗山(4) (00P47)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"泰武(1) (01Q25)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"寶山 (C0D58)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"潮州 (C0R22)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"豐南 (C1S85)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"楠西 (C1O92)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"舊泰武 (C0R60)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"苓雅 (C0V71)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"玉山 (46755)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"文文社 (C1I04)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"民權 (O1V52)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"玉蘭 (C0U65)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"龍潭 (C0C67)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"關山 (01O76)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"東原 (01O19)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"新寮 (C1U69)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"三和 (C0A93)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"奧萬大 (C1I32)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"竹東 (C0D56)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"古亭坑 (C0V37)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"多納林道 (C1V78)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"鳳森 (C0V45)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"紅石 (C0S76)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"富世 (C0T9C)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"表湖 (C0V15)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"佳心 (C0Z05)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"合歡山 (C0H9C)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"翠巒 (01H21)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"泗林 (01R44)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"卓清國小 (O1T81)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"新市 (C0O98)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"東原 (C1X04)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"華源 (C1S80)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"旗山 (C0V74)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"關廟 (C0X17)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"三民 (C0V70)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"崎頂 (01N86)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"金峰 (C1S82)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大寮 (C0V73)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"北港(2) (00J81)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"多納(1) (O1V55)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大粗坑 (swc07)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"六十石山 (01T9J)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"布洛灣 (C1T83)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"鼓山 (C0V69)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"太魯閣 (A0T78)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"玉井 (C0O93)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"長濱 (C0S83)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"左鎮 (C0X20)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"新武(3) (01S44)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"望鄉 (01H39)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"馬頭山 (C0M41)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"武陵 (01S13)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"萬丹 (C0R51)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"美濃 (C0V31)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"王爺宮 (01O75)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"合歡山莊 (A0Z08)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"三貂嶺 (01AF9)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"電光 (01S86)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"翠巒 (C1H85)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"旗津 (C0V50)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"新庄國小 (O1R62)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"楠溪 (C1V46)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"圓富國中 (O1V82)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大礁溪 (C1U61)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"射馬干 (swc09)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大豹 (01A21)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"永康 (46742)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"知本(5) (01S21)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"阿蓮(2) (01P50)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大內 (C0O86)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"北門 (C1X07)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"關西(3) (01D30)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"南鵝 (01S56)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"鹿鳴橋 (00S12)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"華山 (swc10)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"竹田 (C0R50)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"瑪家 (C0R14)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"高雄 (46744)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"萬大 (C1I02)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"曾文 (C0O81)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"東河 (C0S81)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"瑞芳 (C0A66)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"富源 (C0Z08)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"明里 (C0Z02)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"復興 (C0C46)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"東吉島 (46730)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"九芎根 (L1A81)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"臺東 (46766)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"環湖 (C1O85)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"阿禮 (C0R13)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"湖內 (C0V64)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"仁德 (C0X16)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"白河 (C1X03)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"洛韶 (C1T80)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"平鎮 (C0C65)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"尾寮山 (C0R10)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"小公田 (C1M54)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大棟山 (C1O87)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"牛鬥 (C1U50)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"麟洛 (C0R57)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"媽廟 (C0O99)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"林園 (C0V72)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"上德文 (C1R12)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"赤山 (C0R19)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"翠峰 (C1H00)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"明德 (C0E55)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"岡山 (C0V66)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"龜山 (C0C64)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"龍美 (C1M39)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"三地門 (C0R15)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"草嶺(2) (01J97)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"頭汴坑 (01F68)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"關子嶺 (C0X02)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"三地門 (01Q93)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"頭凍 (C1M60)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"神木村 (C0H9A)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"古夏 (01Q61)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"南庄 (C0E43)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"口社 (C1R11)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"翠峰 (01H31)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"烏石鼻 (C1U83)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"南庄(1) (01E17)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"新豐(1) (01r45)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"神木 (swc03)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"梓官 (C0V61)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"永安 (C0V62)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"埔里 (C1I25)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"頭份 (C0E73)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"長治 (C0R48)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"成功 (46761)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"石門 (21C05)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"楊梅 (C0C66)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"臺東(7) (01S61)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"王爺宮 (C0O84)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"梅花 (C0D36)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"北港 (C1K35)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"寒溪 (C1U67)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"關子嶺(2) (01O07)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"南山 (01U08)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"獅潭 (C0E82)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"阿里山 (46753)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"龍泉 (C1R20)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"中坑 (C1M45)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"橋頭 (C0V76)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"望安 (01W01)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"鳳山 (C0V44)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"光復 (C0T96)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"金山 (01P39)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"路竹 (C0V75)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"小公田(2) (01L36)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"冬山 (C0U68)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"橫山 (C0D54)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"神山 (O1S69)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"樟林 (01U45)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"寒溪 (88U83)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"虎頭埤 (C0O97)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"瑞芳 (01A38)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"屏東(5) (00Q07)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"打鐵坑 (C0D48)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"新城國小 (O1D57)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"山佳 (C0A52)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"屏東 (C0R17)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"土場(1) (01U05)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"桶頭 (C1I13)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"南山 (C1U72)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大湖山 (01L39)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"清水 (01U79)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"桶頭(2) (01H11)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"明里 (01T72)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"奇美國小 (O1T80)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"五峰 (01U46)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"左營 (C0V43)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"吉東 (C1V57)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"北源 (01S87)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"瑞岩 (C1H86)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"新瑪家 (01Q92)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"新高口 (C1I44)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"利吉國小 (O1S65)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"望鄉 (C1I06)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"五堵 (01B03)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"和興 (01E37)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"土城 (C0AD4)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"南和 (01Q36)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"再連 (C1U63)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"仁武 (C0V68)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"桶後 (C0A57)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"新圍 (C0R16)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"西巒 (C1I31)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"溪頭 (C1I10)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"八卦 (C1E70)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"澎湖 (46735)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"東河 (C1X05)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"豐丘 (swc06)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"公館 (C1A73)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大津 (C1V34)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"宜梧 (C0K29)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"鞍部 (46691)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"吉貝 (A0W08)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"中埔 (C1M55)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"鶯歌 (C0AD5)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"斗六 (C1K31)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"武陵 (D2F23)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"西螺 (C1K23)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"汐止 (C0AH0)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"樟腦寮 (C1M48)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"龍澗 (C1T98)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"三星 (C1U66)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"彌陀 (C0V65)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"溪埔 (C0V35)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"香山 (C0D57)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"昆陽 (C0H99)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"新竹 (46757)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"崙背 (C1K25)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"草嶺 (C0K24)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"造橋 (C0E74)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"淡水 (46690)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"臺西 (C0G71)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大社 (C0V77)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"金山 (C0A94)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"青雲 (C1I15)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"豐山 (swc12)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"桃園 (C0C48)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"和社 (C1I07)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"深坑 (C0AD2)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"南勢 (C1E60)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"屈尺 (C0A58)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"武界 (C1I03)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"池上 (C0S74)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"豐丘 (C1I29)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"高樹 (C0R47)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"新營 (C0O91)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"褒忠 (C1K27)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"上安 (swc04)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"二水 (C0G88)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"尖山 (C1V39)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"板橋 (46688)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"文山 (C0AC8)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"阿公店 (C0V40)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"里港 (C0R59)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"卡奈托灣 (C1I14)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"排雲 (C1V17)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"鰲鼓 (C1M47)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"龍井 (C0F9R)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"信義 (C1I08)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大崙尾山 (C0A99)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"橫山 (C0F99)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"福隆 (C0A88)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"楠梓 (C0V67)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"下盆 (C1A63)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"九如 (C0R49)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"坪林 (C0A53)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"郡坑 (swc05)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"四湖 (C0K28)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"竹子湖 (46693)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"石碇 (C0A64)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"德基 (C1F9W)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"萬山 (C0V79)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"蘇澳 (46706)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"五結 (C0U78)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"永和 (C0AH1)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"東埔 (C1I35)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"龍神橋 (C1I16)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"新阿里山 (46773)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"竹南 (C0E42)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"潭子 (C0F9O)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"內湖國小 (O1D58)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"福山 (01A43)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"福興 (C0G77)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"西巒 (01H47)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"梵梵(2) (01U06)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"金門(合) (A0W03)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"鼻頭角 (C0A95)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"碧湖 (01A19)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大湖(1) (01E27)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"忠勇 (01S26)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"稍來 (C1F89)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"清流 (C1H90)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"三芝 (C0AD0)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"惠蓀(2) (00H81)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"溪口 (C1M46)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大安 (C0F9K)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"樟腦寮(2) (01L48)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"白石 (21D16)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"水里 (C1I27)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"銅鑼 (C0E78)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"草屯 (C0H96)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"龍安 (C1F9E)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大埔 (01E12)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大甲 (C0F93)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"太平山 (C0U71)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"雪霸 (C0D55)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"太閣南 (C1D42)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"九份二山 (swc02)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"社頭 (C0G86)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"武塔 (01U47)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"竹山 (C0I11)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"玉峰 (21D15)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"外大坪 (C1I24)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"仁愛 (C1H87)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"清水林 (C1F9J)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"新埔(1) (01D31)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"基隆 (46694)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"雪嶺 (C1F94)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"觀音 (C0C59)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"下田埔 (swc17)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"西屯 (C0F9T)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"龍壽社區 (01C57)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"丹大 (C1I05)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"竹子湖 (01A42)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"福山 (C0A56)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"田尾 (C0G82)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"內茅埔(2) (01H78)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"新北城 (01U19)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"臺北 (46692)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"溪湖 (C0G66)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"中心崙 (C1I20)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"上里 (01S57)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"魚池 (C1H91)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"集集 (C1I17)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"林口(1) (01A16)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"新竹市東區 (C0D66)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大直 (C0A9A)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"東澳 (C0U76)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"清水 (C0F9P)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"成德中學 (O1D59)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"埔心 (C0C54)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"秀水 (C0G78)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"六分寮 (01H59)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"留茂安 (01U07)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"馬拉邦山 (C1E71)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"石碇 (01A13)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"三義(2) (01E29)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"日月潭 (46765)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"上谷關 (C1F87)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"長福 (C1H92)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"通霄 (C0E59)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"後安寮 (C1K26)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"后里 (C0F9L)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"沙坑 (01L49)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"關渡 (C1AC5)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"鹿港 (C0G64)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"鎮西堡 (21D17)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"綠島 (C0S73)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"埔中 (C1I28)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"卓蘭 (C0E79)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"彭佳嶼 (46695)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"伯公龍 (C1F9F)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"東勢 (C0F85)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"思源 (C0U73)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"鳳美 (C1E48)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"芳苑 (C0G87)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"褒忠(2) (01K06)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"太平山(1) (01U56)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"巴陵 (21C07)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"頭汴 (01G09)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"奮起湖 (C0M53)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"桐林 (C1F9B)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"橫龍山 (01E03)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"象鼻 (C1E45)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"南靖 (C1M56)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"礁溪 (C0U60)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"五股 (C0A68)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"南屯 (C0F9U)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"石磐龍 (C1M61)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"新豐 (C0D59)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"溪州 (C1G67)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"蘆竹湳 (C1I21)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"社后橋 (01AG0)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大潭 (01E39)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"中寮 (C0H95)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"南豐 (88H89)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"清泉 (01D11)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"石牌 (C0A9B)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"南澳 (C0U77)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"外埔 (C0F9Q)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"花壇 (C0G79)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"草屯(4) (01H63)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"下水埔 (C1G69)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"泰安 (C1E72)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"南勢山 (01E31)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"阿眉 (C1H9B)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"雙冬 (C1H94)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大湖 (C1M57)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"頭城 (C1U59)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"豐原 (C0F9M)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"西丘斯山 (21D35)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"西湖 (C0E81)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大鞍 (C1I12)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"南勢山 (C1E68)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"卓蘭(2) (01E23)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"臺中 (46749)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"石岡 (C0F92)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"東後寮 (C1M52)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"慈恩 (C1T81)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"新莊 (C0ACA)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"龍神橋 (00H54)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"寶山 (O1V51)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大湖 (C0E52)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"金門 (46711)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"員林 (C0G65)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"池端 (21U11)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"水長流 (C1I19)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"苗栗 (C0E75)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"萬興(2) (01G24)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"西林 (01T56)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"芬園 (C0G62)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"虎尾 (C0K33)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"白冷 (C1F9C)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"象鼻(1) (01E06)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"新開 (C1E51)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"岸內 (C1X01)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"羅東 (C0U64)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"南港 (C0A9G)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"新社 (C0F9V)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"平溪旅遊 (NUP46)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"廬山 (C0I01)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"瑞里 (C1M62)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"北斗 (C0G84)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"林內(1) (01J93)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"中西 (C1G70)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"霞雲 (21C14)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"樟湖 (C1I22)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"中壢 (C0C52)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"八仙山(1) (01F10)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"宜蘭 (46708)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"南礦 (C1E67)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"馬都安 (C0E61)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"松鶴 (swc13)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"水尾 (C1C51)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"中正橋 (01A41)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"新興橋 (C1I34)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"埔鹽 (C0G80)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"北山(2) (01H68)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"慶福山 (C1F9G)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大坪頂 (01E33)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"雙崎 (C0F90)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大肚城 (C1H89)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"蘆洲 (C0AD3)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"阿丹 (C1K32)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大里 (C0F9N)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"溪口(3) (01M01)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"上安橋 (C1I30)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"公館 (C1E77)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"南湖 (C1E69)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"珊珠湖 (01E24)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"梧棲 (46777)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"新伯公 (C1F91)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"凌霄 (C1H88)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"集集(2) (00H71)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"後龍 (C0E54)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"土庫 (C1K34)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"伸港 (C0G89)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"馬祖 (46799)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"鳳凰 (C0I09)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"嘎拉賀 (21C09)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"苑裡 (C0E83)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"六分寮 (C1H97)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"天祥 (C0T82)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"白毛台 (C1F9D)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"壯圍 (C0U62)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"松安 (01E08)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"松安 (C1E46)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"復興國小 (NUP49)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"龜山島 (C0U75)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"白布帆 (swc01)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"田中 (C0G85)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大埔 (01J96)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大肚 (C0F00)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"九份二山 (C1I23)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"富貴角 (01A35)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"湖口 (C0D65)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"雪嶺 (01F35)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大埔 (C0K30)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"中竹林 (C0F9A)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"麥寮 (A0K42)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"三義 (C0E53)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"魚寮 (C1M50)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"神岡 (C0F9I)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"坪頂 (swc14)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"烏日 (C0F9S)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"東沙 (46810)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"清流(1) (01H72)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"冬山 (01U13)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"五分山站 (46685)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"彰化 (C1G63)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"烏石坑 (C1F9H)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"外坪 (C1D64)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"新屋 (46705)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"嘉義 (46748)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"梨山 (C0F86)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"北山 (C1H93)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大禹嶺 (C0T79)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"內埔 (C1M49)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大桶山 (01A44)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"高義 (21C08)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"楓樹林 (C1I33)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"中和 (C0AG9)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"三重 (C0A9I)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"林口 (C0A71)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"士林 (C0A9E)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"八里 (C0AD1)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"雙崎(2) (00F39)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"大坑 (C0F97)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"內湖 (C0A9F)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"蘆竹 (C0C62)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"阿蓮 (C0V53)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"天母 (C0A9C)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"富貴角 (C0A92)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"信義 (C0AC7)"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"社子 (C0A98)"</span><span class="w">
+          </span><span class="p">],</span><span class="w">
+          </span><span class="s2">"10min"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"Maximum"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unlimited"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"Minimun"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"ItemUnit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mm"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="s2">"1h"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"Maximum"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unlimited"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"Minimun"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"ItemUnit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mm"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="s2">"3h"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"Maximum"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unlimited"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"Minimun"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"ItemUnit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mm"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="s2">"6h"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"Maximum"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unlimited"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"Minimun"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"ItemUnit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mm"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="s2">"12h"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"Maximum"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unlimited"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"Minimun"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"ItemUnit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mm"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="s2">"24h"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"Maximum"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unlimited"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"Minimun"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"ItemUnit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mm"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="s2">"Today"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"Maximum"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unlimited"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"Minimun"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"ItemUnit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mm"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="s2">"Yesterday"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"Maximum"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unlimited"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"Minimun"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"ItemUnit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mm"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="s2">"BeforeYesterday"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"Maximum"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unlimited"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"Minimun"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"ItemUnit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mm"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="s2">"ReferenceURL"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.cwb.gov.tw/V7/eservice/docs/overview/forecast_web/sudden/hvrain.htm"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"Name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"災害示警-颱風警報"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"UUID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"b1cd10e051bf19869bc4bfbbcc9fc35b"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"URL"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://alerts.ncdr.nat.gov.tw/RssAtomFeed.ashx?AlertType=5"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"Targets"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Null"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"MonitoredObject"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"ChangeStatus"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="s2">"true"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"false"</span><span class="w">
+          </span><span class="p">],</span><span class="w">
+          </span><span class="s2">"Content"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Full Text"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="s2">"ReferenceURL"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://alerts.ncdr.nat.gov.tw/RSS.aspx"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"Name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"全國細懸浮微粒手動監測資料"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"UUID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"d222f83a44ce3954f5cd5997cd36f922"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"URL"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://opendata.epa.gov.tw/ws/Data/PM25/?$orderby=MonitorDate%20desc&amp;$skip=0&amp;$top=1000&amp;format=json"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"Targets"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"三義"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"前金"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南投"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"嘉義"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"基隆"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"士林"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"宜蘭"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"屏東"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"平鎮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"彰化"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"忠明"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"恆春"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"斗六"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"新營"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"朴子"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"板橋"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"桃園"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"汐止"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"竹東"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"美濃"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺南"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"臺東"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"花蓮"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"苗栗"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"萬華"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"豐原"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"金門"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"陽明"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"馬公"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"馬祖"</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="s2">"MonitoredObject"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"ChangeStatus"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="s2">"true"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"false"</span><span class="w">
+          </span><span class="p">],</span><span class="w">
+          </span><span class="s2">"Concentration"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"Maximum"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unlimited"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"Minimun"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"ItemUnit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"μg/m3"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="s2">"MonitorData"</span><span class="p">:</span><span class="w"> </span><span class="s2">"yyyy-mm-dd"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="s2">"ReferenceURL"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://opendata.epa.gov.tw/Data/Details/PM25/"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"Name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"經濟部水利署-台灣水庫統計資訊"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"UUID"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9ad94b3a36433e6bb0aed5edb3fbe271"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"URL"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://128.199.223.114:10080/"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"Targets"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"石門水庫"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"翡翠水庫"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"寶山第二水庫"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"永和山水庫"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"明德水庫"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"鯉魚潭水庫"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"德基水庫"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"石岡壩"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"霧社水庫"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"日月潭水庫"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"集集攔河堰"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"仁義潭水庫"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"白河水庫"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"烏山頭水庫"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"曾文水庫"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"南化水庫"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"阿公店水庫"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"高屏溪攔河堰"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"牡丹水庫"</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="s2">"MonitoredObject"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"ChangeStatus"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="s2">"true"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"false"</span><span class="w">
+          </span><span class="p">],</span><span class="w">
+          </span><span class="s2">"daliyTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"start:--,end:--"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"daliyRainfall"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"Maximum"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unlimited"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"Minimun"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"ItemUnit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mm"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="s2">"daliyInflow"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"Maximum"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unlimited"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"Minimun"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"ItemUnit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cms"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="s2">"daliyOverflow"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"Maximum"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unlimited"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"Minimun"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"ItemUnit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cms"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="s2">"daliyDetector"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"Maximum"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unlimited"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"Minimun"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"ItemUnit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"m"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="s2">"immediateStorage"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"Maximum"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unlimited"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"Minimun"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"ItemUnit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"m3"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="s2">"immediateLevel"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"Maximum"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+              </span><span class="s2">"245.00"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"170"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"150.00"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"85"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"61"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"300"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"1,408.00"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"274.5"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"1,005.00"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"748.48"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"214.75"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"105"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"109"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"58.18"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"227"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"180"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"37"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"--"</span><span class="p">,</span><span class="w">
+              </span><span class="s2">"142"</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="s2">"Minimun"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"ItemUnit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"m"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="s2">"baseAvailabe"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"Maximum"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unlimited"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"Minimun"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"ItemUnit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"m"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="s2">"immediatePercentage"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"Maximum"</span><span class="p">:</span><span class="w"> </span><span class="s2">"100"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"Minimun"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"ItemUnit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"%"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="s2">"immediateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"yyyy-mm-dd hh:mm:ss"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="s2">"ReferenceURL"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://opendata.epa.gov.tw/Data/Details/PM25/"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
 
       </div>
       <div class="dark-box">
